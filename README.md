@@ -1,7 +1,10 @@
 # BSIM Internal QA Program
+The program is to do QA check for BSIM codes to prevent divide-by-zeros, negative values in square roots, and unprotected log() or exp() cases.
+
+## Python version and libraries
 The program is written in `Python 3.6`. No extra libraries are needed.
 
-### How to use
+## How to use
 First, put your code under folder `code`. Here, we use BSIM-CMG code as an example.
 
 Second, execute the program in BWRC server by
