@@ -1,0 +1,25 @@
+In file bsimcmg.va:
+In file bsimcmg_binning_parameters.include:
+In file bsimcmg_body.include:
+    Found 12 logarithm cases
+        Line 66       lln  =  ln(max(x, `N_MINLOG));
+        Line 1382                 Cins  =  2.0 * `M_PI * EPSROX * `EPS0 / ln(1.0 + 2.0 * EOT / D);
+        Line 2815       vth_fixed_factor_SI   =  ln(Cins * nVtm/(`q * Nc * 2.0 * Ach));
+        Line 2816       vth_fixed_factor_Sub  =  ln((qdep * rc) * (qdep * rc) / ((exp(qdep * rc) - qdep * rc - 1.0))) + vth_fixed_factor_SI;
+        Line 2853           T7  =  ln(1.0 + qm);
+        Line 2858           e0  =  F0 - qm + ln(-qm) + ln(T5) + QMFACTORCVfinal * pow(-(qm + qdep), 2.0 / 3.0);
+        Line 2865           e0  =  F0 - qm + ln(-qm) + ln(T5) + QMFACTORCVfinal * pow(-(qm + qdep), 2.0 / 3.0);
+        Line 2940          T7  =  ln(1.0 + qm);
+        Line 2945          e0  =  F0 - qm + ln(-qm) + ln(T5) + QMFACTORCVfinal * pow(-(qm + qdep), 2.0 / 3.0);
+        Line 2952          e0  =  F0 - qm + ln(-qm) + ln(T5) + QMFACTORCVfinal * pow(-(qm + qdep), 2.0/3.0);
+        Line 2964          T2  =  (vge - (deltaPhi - Eg - Vtm * ln(NBODY / Nc) + DELVFBACC)) / Vtm;
+        Line 2973                  T10  = -ln(1.0 - T10 + T4 * T4 );
+In file bsimcmg_cfringe.include:
+    Found 4 logarithm cases
+        Line 67         Ccg1 =  1.0 / Cnon * ln(1.0 + lexp(TT1));                      \
+        Line 73                 ln(((Lext) + 0.5 * `M_PI * Rcf) / (Lext));             \
+        Line 83     Cfglog =  epssp * (C1 * ln(C2 / C3) + 12.27);                      \
+        Line 92                 / TT0 * ln(TT1 / TT2);                                   \
+In file bsimcmg_quasi_static_cv.include:
+In file bsimcmg_rdsmod.include:
+In file common_defs.include:

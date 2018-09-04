@@ -1,0 +1,40 @@
+In file bsimcmg.va:
+In file bsimcmg_binning_parameters.include:
+In file bsimcmg_body.include:
+    Found 3 possible divide-by-zero cases of U0MULT: 
+        Line 2884       Dmobs  =  Dmobs / U0MULT; 
+        Line 3053       Dmob  =  Dmob / U0MULT; 
+        Line 3060       Dmob_cv   =  Dmob_cv / U0MULT; 
+    Found 1 possible divide-by-zero cases of CDSCN2: 
+        Line 1646          CDSC_i  =  CDSC_i * (1.0 + CDSCN1 / NFIN * lln(1.0 + NFIN / CDSCN2));
+    Found 1 possible divide-by-zero cases of QM0: 
+        Line 3026          T4      =  qia / QM0;
+    Found 1 possible divide-by-zero cases of QM0ACC: 
+        Line 3036          T6       =  1.0 + pow(qi_acc_for_QM / QM0ACC, PQMACC);
+    Found 2 possible divide-by-zero cases of LSP: 
+        Line 2294             T1       =  0.942 * Hrsd * epssp / LSP;
+        Line 2317          Ccorner  =  (NFIN * Acorner + ARSDEND + ASILIEND) * epssp / LSP;
+    Found 1 possible divide-by-zero cases of TOXG: 
+        Line 2391       Toxratio      =  lexp(NTOX_i * lln(TOXREF / TOXG)) / T0;
+    Found 1 possible divide-by-zero cases of XJBVS: 
+        Line 2670             VjsmRev   =  -BVS - Nvtms * lln((T2 - 1.0) / XJBVS);
+    Found 1 possible divide-by-zero cases of XJBVD: 
+        Line 2688             VjdmRev   =  -BVD - Nvtmd * lln((T2 - 1.0) / XJBVD);
+    Found 1 possible divide-by-zero cases of VTSS: 
+        Line 3442                 T1   =  lexp(T0 * VTSS / (VTSS - ves_jct)) - 1.0;
+    Found 1 possible divide-by-zero cases of VTSD: 
+        Line 3496                 T1   =  lexp(T0 * VTSD/ (VTSD - ved_jct)) - 1.0;
+    Found 1 possible divide-by-zero cases of VTSSWS: 
+        Line 3454                 T1   =  lexp(T0 * VTSSWS / (VTSSWS - ves_jct)) - 1.0;
+    Found 1 possible divide-by-zero cases of VTSSWD: 
+        Line 3507                 T1   =  lexp(T0 * VTSSWD / (VTSSWD - ved_jct)) - 1.0;
+    Found 1 possible divide-by-zero cases of VTSSWGS: 
+        Line 3466                 T1   =  lexp(T0 * VTSSWGS / (VTSSWGS - ves_jct)) - 1.0;
+    Found 1 possible divide-by-zero cases of VTSSWGD: 
+        Line 3518                 T1   =  lexp(T0 * VTSSWGD / (VTSSWGD - ved_jct)) - 1.0;
+    Found 1 possible divide-by-zero cases of RTH0: 
+        Line 2146             gth  =  (T1 + T2)/ RTH0;
+In file bsimcmg_cfringe.include:
+In file bsimcmg_quasi_static_cv.include:
+In file bsimcmg_rdsmod.include:
+In file common_defs.include:

@@ -1,0 +1,25 @@
+In file bsimcmg.va:
+In file bsimcmg_binning_parameters.include:
+In file bsimcmg_body.include:
+    Found 17 exponential cases
+        Line 2338             Theta_SCE  =  exp(-tmp);
+        Line 2349             Theta_SW  =  exp(-tmp);
+        Line 2360             Theta_DIBL  =  exp(-tmp);
+        Line 2372          T0  =  exp(-tmp) / max((exp(-tmp) + DVTP2), 1.0e-6);
+        Line 2816       vth_fixed_factor_Sub  =  ln((qdep * rc) * (qdep * rc) / ((exp(qdep * rc) - qdep * rc - 1.0))) + vth_fixed_factor_SI;
+        Line 2851       qm  =  exp(T3);
+        Line 2856           T4  =  T8 / (exp(T8) - T8 - 1.0);
+        Line 2863           T4  =  T8 / (exp(T8) - T8 - 1.0);
+        Line 2938       qm  =  exp(T3);
+        Line 2943          T4  =  T8 / (exp(T8) - T8 - 1.0);
+        Line 2950          T4  =  T8 / (exp(T8) - T8 - 1.0);
+        Line 2975                  T11  = exp(-T10);
+        Line 2980          T6  =  exp(-T10) - 1.0;
+        Line 2986             T11  =  exp(-T8) - 1.0;
+        Line 2994                 T12  =  T9 * sqrt(exp(-T8) + T8 - 1.0);
+        Line 3001          qi_acc_for_QM  =  T9 * exp(-T8 / 2.0) * Vtm;
+        Line 3068          DIBLfactor  =  PDIBL1_a * exp(-tmp) + PDIBL2_a;
+In file bsimcmg_cfringe.include:
+In file bsimcmg_quasi_static_cv.include:
+In file bsimcmg_rdsmod.include:
+In file common_defs.include:

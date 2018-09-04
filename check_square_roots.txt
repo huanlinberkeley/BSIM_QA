@@ -1,0 +1,83 @@
+In file bsimcmg.va:
+In file bsimcmg_binning_parameters.include:
+In file bsimcmg_body.include:
+    Found 54 square root cases
+        Line 76       hypsmooth  =  0.5 * (x + sqrt(x * x + 4.0 * c * c));
+        Line 86       hypmax  =  xmin + 0.5 * (x - xmin - c + sqrt((x - xmin - c) * (x - xmin - c) - 4.0 * xmin * c));
+        Line 1343                     Weff_UFCM  =  2.0 * sqrt( HFIN * HFIN + (TFIN_TOP - TFIN_BASE) * (TFIN_TOP - TFIN_BASE) / 4.0);
+        Line 1358                     Weff_UFCM  =  2.0 * sqrt(HFIN * HFIN + (TFIN_TOP - TFIN_BASE) * (TFIN_TOP - TFIN_BASE) / 4.0) + TFIN_TOP;
+        Line 1373                     Weff_UFCM  =  2.0 * sqrt(HFIN * HFIN + (TFIN_TOP - TFIN_BASE) * (TFIN_TOP - TFIN_BASE) / 4.0) + TFIN_TOP + TFIN_BASE;
+        Line 1407       scl  =  sqrt((epssub * Ach / Cins) * (1.0 + Ach * Cins / (2.0 * epssub * Weff_UFCM * Weff_UFCM)));
+        Line 2199          Rsp       =  rhorsd * T1 / (sqrt(`M_PI) * NFIN) * (1.0 / sqrt(afin) - 2.0 / sqrt(Arsd) + sqrt(afin / (Arsd*Arsd)));
+        Line 2204          lt          =  sqrt(RHOC * arsd_total / (rhorsd * prsd_total));
+        Line 2331       litl          =  sqrt(epsratio * EOT * 0.5 * TFIN);
+        Line 2366       Theta_RSCE  =  sqrt(1.0 + LPE0_i / Leff) - 1.0;
+        Line 2423       T1       =  (DevTemp / 300.15) * sqrt(DevTemp / 300.15);
+        Line 2594          JTSSWGS_t  =  JTSSWGS * (sqrt(JTWEFF / Weff0) + 1.0) * lexp(Eg0 * XTSSWGS * (TRatio - 1.0) / Vtm);
+        Line 2595          JTSSWGD_t  =  JTSSWGD * (sqrt(JTWEFF / Weff0) + 1.0) * lexp(Eg0 * XTSSWGD * (TRatio - 1.0) / Vtm);
+        Line 2625             phib  =  sqrt(T0 * T0 + 1.0e-6);
+        Line 2636             vbi  =  sqrt(T0 * T0 + 1.0e-6);
+        Line 2665             VjsmFwd   =  Nvtms * lln(0.5 * (Tb + sqrt(Tb * Tb + 4.0 * XExpBVS)));
+        Line 2683             VjdmFwd   =  Nvtmd * lln(0.5 * (Tb + sqrt(Tb * Tb + 4.0 * XExpBVD)));
+        Line 2752          veseff  =  vesmax - 0.5 * (T2 + sqrt(T2 * T2 + 0.004 * vesmax));
+        Line 2821       auxQMfact                 =  pow(((3.0 / 4.0) * 3.0 * `HBAR * 2.0 * `M_PI * `q / (4.0 * sqrt(2.0 * mx))), 2.0 / 3.0);
+        Line 2826       dvth_rsce    =  K1RSCE_i * Theta_RSCE * sqrt(phist);
+        Line 2841           T3  =  (-K1_t / (2.0 * nVtm)) * (sqrt(T1) - sqrt(2.0 * phib));
+        Line 2854           qm  =  2.0 * (1.0 - sqrt(1.0 + T7 * T7));
+        Line 2891          T0    =  0.5 * (T1 + sqrt(T1 * T1 + 0.01)); 
+        Line 2896          T0    =  0.5 * (T1 + sqrt(T1 * T1 + 0.01)); 
+        Line 2912          Vdsat  =  (Tb - sqrt(Tb * Tb - 2.0 * Ta * Tc)) / Ta; 
+        Line 2928          T3  = (-K1_t / (2.0 * nVtm)) * (sqrt(T1) - sqrt(2.0 * phib));
+        Line 2941          qm  =  2.0 * (1.0 - sqrt(1.0 + T7 * T7));
+        Line 2962          T9  =  (K1_t / (2.0 * nVtm)) * sqrt(Vtm); 
+        Line 2965          if ((T2 * Vtm) > phib + T9 * sqrt(phib * Vtm)) begin
+        Line 2966              T1   =  sqrt(T2 - 1.0 + T0 * T0) - T0; 
+        Line 2969              T3   =  T2 * 0.5 - 3.0 * (1.0 + T9 / sqrt(2.0));
+        Line 2970              T10  =  T3 + sqrt(T3 * T3 + 6.0 * T2);
+        Line 2976                  T4   = sqrt(T2 - 1.0 + T11 + T0 * T0) - T0;
+        Line 2981          T7  =  sqrt(T6 + T10);
+        Line 2987             T12  =  sqrt(T11 + T8);
+        Line 2994                 T12  =  T9 * sqrt(exp(-T8) + T8 - 1.0);
+        Line 3003          psipclamp  =  0.5 * (T8 + 1.0 + sqrt((T8 - 1.0) * (T8 - 1.0) + 0.25 * 2.0 * 2.0));
+        Line 3004          sqrtpsip   =  sqrt(psipclamp);
+        Line 3117       Nsat   =  0.5 * (1.0 + sqrt(1.0 + T3));
+        Line 3132          T3      =  sqrt(PHIBE_i - veseff) - sqrt(PHIBE_i);
+        Line 3181          vgs_overlap  =  0.5 * (T0 - sqrt(T0 * T0 + 4.0 * `DELTA_1));
+        Line 3182          qgs_ov       =  T1 * (CGSL_i * (T2 - vfbsdcv - vgs_overlap - 0.5 * CKAPPAS_i * (sqrt(1.0 - 4.0 * vgs_overlap / CKAPPAS_i) - 1.0)) + CGSO_i * T2);
+        Line 3185          vgd_overlap  =  0.5 * (T0 - sqrt(T0 * T0 + 4.0 * `DELTA_1));
+        Line 3186          qgd_ov       =  T1 * (CGDL_i * (T2 - vfbsdcv - vgd_overlap - 0.5 * CKAPPAD_i * (sqrt(1.0 - 4.0 * vgd_overlap / CKAPPAD_i) - 1.0)) + CGDO_i * T2);
+        Line 3247             T1       =  sqrt(T0 * T0 + 1.0e-10);
+        Line 3283                 Voxacc  =  0.5 * (T0 - 0.02 + sqrt((T0 - 0.02) * (T0 - 0.02) - 0.08 * vfbzb));
+        Line 3285                 Voxacc  =  0.5 * (T0 - 0.02 + sqrt((T0 - 0.02) * (T0 - 0.02) + 0.08 * vfbzb));
+        Line 3307          Vdseffx  =  sqrt(Vdseff * Vdseff + 0.01) - 0.1;
+        Line 3318          vgs_eff  =  sqrt(T0 * T0 + 1.0e-4);
+        Line 3338          vgd_eff  =  sqrt(T0 * T0 + 1.0e-4);
+        Line 3549          vge_overlap  =  0.5 * (T0 + sqrt(T0 * T0 + 4.0 * `DELTA_1));
+        Line 3550          Qeg          =  Qeg - NFINtotal * LeffCV * (CGBL_i * (T3 - vge_overlap + 0.5 * CKAPPAB_i * ( sqrt(1.0 + 4.0 * vge_overlap / CKAPPAB_i) - 1.0 )));
+        Line 3669                 ctnoi  =  epsilon / sqrt( gamma * delta) * (2.5316 * npart_c);
+        Line 3690                 sf  =  (noiGd0 + 1.0e-15) / sqrt(delta / gamma);
+In file bsimcmg_cfringe.include:
+    Found 8 square root cases
+        Line 78     C1   =  4.0 / (sqrt(2.0 * (x + 1)) * `M_PI);                         \
+        Line 79     C2   =  sqrt((Tox) * (Tox) + 2.0 * (Hg) * (Tox) +                    \
+        Line 80                 (Hg) * (Hg) * (x + 1)) * sqrt(x + 1) + (Tox) +               \
+        Line 82     C3   =  (Tox) * sqrt((x + 1) * (x + 4)) + Tox * (x + 2);             \
+        Line 86     TT0    =  sqrt(dcf * dcf + 1.0);                                      \
+        Line 87     TT1    =  sqrt((dcf * dcf + 1) * ((dcf * (Tox)) * (dcf * (Tox)) +     \
+        Line 91     Cfgsat =  2.0 * epssp * sqrt(2) / `M_PI * (Cf1) * dcf              \
+        Line 97                 sqrt(TT1 * TT1 + 4 * delta * Cfgsat)));                     \
+In file bsimcmg_quasi_static_cv.include:
+In file bsimcmg_rdsmod.include:
+    Found 6 square root cases
+        Line 49         T3       =  sqrt(T2 * T2 + 1.0e-1); 
+        Line 53         T0       =  0.5 * (T1 + sqrt(T1 * T1 + 0.01));
+        Line 58         T3       =  sqrt(T2 * T2 + 1.0e-1); 
+        Line 62         T0       =  0.5 * (T1 + sqrt(T1 * T1 + 0.01));
+        Line 71         T0       =  0.5 * (T1 + sqrt(T1 * T1 + 0.01)); 
+        Line 78         T0       =  0.5 * (T1 + sqrt(T1 * T1 + 0.01)); 
+In file common_defs.include:
+    Found 4 square root cases
+        Line 84                         if (MJ == 0.5) sarg  =  1.0 / sqrt(arg);            \
+        Line 89                         if (MJ == 0.5) sarg  =  1.0 / sqrt(arg);            \
+        Line 93                         if (MJ2 == 0.5) sarg  =  1.0 / sqrt(arg);           \
+        Line 99                     if (MJ == 0.5) sarg  =  1.0 / sqrt(arg);                             \
